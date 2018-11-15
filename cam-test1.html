@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GEOLOCALITZACIÓ</title>
+    <title>Geolocation</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <style>
@@ -19,23 +19,12 @@
     </style>
   </head>
   <body>
-	
-	<div class="container">
-		<div class="row">
-			<!--<div id="map"></div>-->
-			<iframe style="border: 0; width:100%; height:500px; margin-top: 15px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1496.6526969086508!2d2.1780612000000046!3d41.38917369999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2fb148c6c2d%3A0xa6e902ba1663e3c0!2sCarrer+de+Sant+Pere+M%C3%A9s+Alt%2C+61%2C+08003+Barcelona!5e0!3m2!1sca!2ses!4v1424788322314" frameborder="0"></iframe>
-		</div>
-		<div class="row">
-			<a class="boto_menu_main" href="index.html">TORNAR AL MENÚ PRINCIPAL</a>
-		</div>
-	</div>    
-	
+    <div id="map"></div>
     <script>
       // Note: This example requires that you consent to location sharing when
       // prompted by your browser. If you see the error "The Geolocation service
       // failed.", it means you probably did not give permission for the browser to
       // locate you.
-	  /*
       var map, infoWindow;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
@@ -72,10 +61,9 @@
                               'Error: Your browser doesn\'t support geolocation.');
         infoWindow.open(map);
       }
-	  */
     </script>
-    <!--<script async defer
+    <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTuQQM7dp17sHCrQpuKyrdx_8_r81gtz8&callback=initMap">
-    </script>-->
+    </script>
   </body>
 </html>
