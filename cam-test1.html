@@ -10,9 +10,9 @@
   <body>
   
   	<div style="height:80%;">
-		<video id="video" width="640" height="480" autoplay></video>
+		<video id="video" width="250" height="250" autoplay></video>
 		<br>
-		<canvas id="canvas" width="640" height="480"></canvas>
+		<canvas id="canvas" width="250" height="250"></canvas>
 	</div>
   	
 	<div style="height:20%; text-align: center; vertical-align: middle; background-color: rgb(79,128,186);">
@@ -68,12 +68,11 @@
 	canvas.height = parent.offsetHeight;
 */
 
-	context.canvas.width  = window.innerWidth;
-	context.canvas.height = window.innerHeight;
+
   
 	// Trigger photo take
 	document.getElementById("snap").addEventListener("click", function() {
-		context.drawImage(video, 0, 0, 640, 480);
+		context.drawImage(video, 0, 0, 250, 250);
 	});
   </script>
 </html>
