@@ -152,15 +152,17 @@ pre code {
 
 /* FAR 15/11/2018 : Enllaços pantalla principal */
 
-
 a.boto_menu_main {
-    padding: 10px 5px 10px 5px;
-    border-radius: 10px;
-    display: inline-block;
-    border: 2px solid #ccdb00;
-    background-color: #ccdb00;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgb(122, 177, 96)!important;
+    border: 2px solid white!important;
+    border-radius: 0.8rem!important;
+    padding: .75rem .75rem!important;
+    color: white;
+    width: auto;
+    margin: 0.1em;
 }
-
 
 
 
