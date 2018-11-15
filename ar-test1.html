@@ -16,9 +16,16 @@
 			<a-scene  embedded arjs='sourceType: webcam; debugUIEnabled: false; sourceWidth: 240; sourceHeight: 180;' antialias="true" outline>
 			  <a-assets>
 				<a-asset-item id="mymodel" src="assets/Astronaut.gltf"></a-asset-item>
+				<a-mixin id="light"
+					geometry="primitive: sphere; radius: 0.5"
+					material="color: #FFF; shader: flat"
+					light="color: #DDDDFF; distance: 120; intensity: 2; type: point"></a-mixin>
 			  </a-assets>  
 			  <a-marker preset='hiro'>
 				<a-entity scale="0.4 0.4 0.4" gltf-model="#mymodel"></a-entity>
+				  <a-entity animation="property: rotation; to: 0 0 360; dur: 4000; easing: linear; loop: true">
+					<a-entity mixin="light" position="30 0 0"></a-entity>
+				  </a-entity>
 			  </a-marker>
 			  <a-entity camera></a-entity>
 			</a-scene>
