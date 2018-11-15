@@ -163,6 +163,8 @@ a.boto_menu_main {
     width: auto;
     margin-left: auto;
     margin-right: auto;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
 }
 
 
