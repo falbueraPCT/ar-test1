@@ -16,23 +16,8 @@ h1{
   padding-top: 150px;
 }
 
-button{
-  text-transform: uppercase;
-  /* margin-left: -25px; */
-  font-weight: bold;
-  background-color: rgb(122, 177, 96)!important;
-  border: 2px solid white!important;
-  border-radius: 0.8rem!important;
-  padding: .75rem .75rem!important;
-  color: white;
-  width: auto;
-  margin: 0.1em;
-}
 
-button:hover{
-  border: 3px solid white!important;
-  box-shadow: 0.1em 0.1em 0.5em black !important;
-}
+
 
 /* button:visited{
   border: 3px solid rgb(122, 177, 96) !important;
@@ -145,10 +130,6 @@ pre code {
 .subscription-details {
   transition: opacity 1s;
 }
-
-
-
-
 
 /* FAR 15/11/2018 : Enllaços pantalla principal */
 
