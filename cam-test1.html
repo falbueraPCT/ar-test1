@@ -16,7 +16,7 @@
 	</div>
   	
 	<div style="height:20%; text-align: center; vertical-align: middle; background-color: rgb(79,128,186);">
-		<button id="snap">CAPTURA FOTO</button>
+		<button class="boto_menu_main" id="snap">CAPTURA FOTO</button>
 		<a class="boto_menu_main" style="display: inline-block; margin-top: 10%;" href="index.html">TORNAR AL MENÚ PRINCIPAL</a>
 	</div>
 	
@@ -67,6 +67,10 @@
 	canvas.width = parent.offsetWidth;
 	canvas.height = parent.offsetHeight;
 */
+
+	context.canvas.width  = window.innerWidth;
+	context.canvas.height = window.innerHeight;
+  
 	// Trigger photo take
 	document.getElementById("snap").addEventListener("click", function() {
 		context.drawImage(video, 0, 0, 640, 480);
