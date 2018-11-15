@@ -4,8 +4,8 @@ const CACHE_NAME = 'v1_cache_pwa';
 //Defino los ficheros a cachear en la aplicacion
 var urlsToCache = [
   './',
- // './css/estilos.css',
- // './js/main.js',
+  './css/estilos.css',
+  './js/main.js',
   './images/logo.png',
   './images/logo.jpg',
   './images/costa-dorada.jpg',
