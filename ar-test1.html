@@ -20,7 +20,7 @@
 					geometry="primitive: sphere; radius: 0.2"
 					material="color: #FFF; shader: flat"
 					light="color: #DDDDFF; distance: 120; intensity: 5; type: point"></a-mixin>
-			  </a-assets>  
+			  </a-assets>
 			  <a-marker preset='hiro'>
 				<a-entity scale="0.4 0.4 0.4" gltf-model="#mymodel"></a-entity>
 				  <a-entity animation="property: rotation; to: 0 0 360; dur: 4000; easing: linear; loop: true">
@@ -34,7 +34,11 @@
 				  </a-entity>				  
 				  <a-entity animation="property: rotation; to: 0 0 360; dur: 4000; easing: linear; loop: true">
 					<a-entity mixin="light" position="0 2.5 0"></a-entity>
-				  </a-entity>						  
+				  </a-entity>				
+
+				  <a-entity animation="property: rotation; to: 0 0 360; dur: 4000; easing: linear; loop: true">
+					<a-entity mixin="light" position="0 2 -1"></a-entity>
+				  </a-entity>
 				  
 			  </a-marker>
 			  <a-entity camera></a-entity>
