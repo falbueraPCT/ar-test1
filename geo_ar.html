@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Test AR Localització</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta charset="utf-8"/>
+    <script defer src="//cdn.rawgit.com/chrisveness/geodesy/v1.1.2/latlon-spherical.js"></script>
+    <script defer src="//cdn.rawgit.com/chrisveness/geodesy/v1.1.2/dms.js"></script>
+  
+        <style>
+            /* Always set the map height explicitly to define the size of the div
+            * element that contains the map. */
+            #map {
+                height: 100%;
+            }
+            /* Optional: Makes the sample page fill the window. */
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            #container {
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                overflow: hidden;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div style="height:80%;">
+            <div id="container"></div>
+        </div>
+		<div style="height:20%; text-align: center; vertical-align: middle; background-color: rgb(79,128,186);">
+			<a class="boto_menu_main" style="display: inline-block; margin-top: 10%;" href="index.html">TORNAR AL MENÚ PRINCIPAL</a>
+		</div>
+        <!--
+        <div style="height:30%;">
+            <div id="map"></div>
+        </div>
+        -->
+        <!--
+        <script>
+            var pos;
+        </script>       
+        -->
+        <script type="text/javascript" src="../../js/awe-v8.js"></script>
+        <script type="text/javascript" src="../../js/awe-loader.js"></script>
+        <script type="text/javascript" src="controlador.js"></script>
+        <!--<script type="text/javascript" src="geolocalizacion.js"></script>-->
+        <script type="text/javascript" src="../../node_modules/ecef-projector/index.js"></script>
+        <script type="text/javascript" src="../../node_modules/wgs84/index.js"></script>
+        <!--<script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx7GDvySBEw9cOFx2DLcbcGpfoyvFvegA&callback=initMap">
+        </script>-->
+    </body>
+</html>
